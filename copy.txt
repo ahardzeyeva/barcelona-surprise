@@ -1,1 +1,52 @@
+SCREEN 1
 
+TITLE:
+У меня есть кое-что для тебя
+
+SUBTITLE:
+Нажми, чтобы открыть
+
+BUTTON:
+Открыть подарок
+
+
+SCREEN 2
+
+TITLE:
+Варшава → Барселона
+
+DATE:
+18 декабря
+
+BUTTON:
+Открыть билет
+
+
+SCREEN 3
+
+TITLE:
+Барселона в декабре
+
+SUBTITLE:
+Огни, ярмарки, Рождество.
+
+BUTTON:
+Дальше
+
+
+SCREEN 4
+
+TITLE:
+Теперь — Camp Nou.
+
+SUBTITLE:
+На Монжуике ты уже был.
+
+MATCH:
+FC Barcelona vs Real Sociedad
+
+DATE:
+19 декабря
+
+LOCATION:
+Camp Nou, Barcelona
