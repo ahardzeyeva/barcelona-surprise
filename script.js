@@ -170,6 +170,42 @@ function bindObjectInteractions() {
   }
 }
 
+function renderTicketPatterns() {
+  const markerSize = 7;
+  const gridSize = 21;
+  const markerOrigins = [[0, 0], [0, 14], [14, 0]];
+
+  document.querySelectorAll(".ticket__qr").forEach((pattern) => {
+    for (let row = 0; row < gridSize; row += 1) {
+      for (let column = 0; column < gridSize; column += 1) {
+        const module = document.createElement("span");
+        module.className = "ticket__qr-module";
+
+        const origin = markerOrigins.find(([top, left]) => (
+          row >= top && row < top + markerSize &&
+          column >= left && column < left + markerSize
+        ));
+
+        let isFilled;
+        if (origin) {
+          const localRow = row - origin[0];
+          const localColumn = column - origin[1];
+          isFilled = localRow === 0 || localRow === markerSize - 1 ||
+            localColumn === 0 || localColumn === markerSize - 1 ||
+            (localRow >= 2 && localRow <= 4 && localColumn >= 2 && localColumn <= 4);
+        } else {
+          isFilled = Math.random() > 0.52;
+        }
+
+        if (isFilled) {
+          module.classList.add("is-on");
+        }
+        pattern.append(module);
+      }
+    }
+  });
+}
+
 function revealSection(sectionNumber) {
   const section = document.querySelector(`[data-section="${sectionNumber}"]`);
 
@@ -343,3 +379,4 @@ revealButtons.forEach((trigger) => {
 
 animateSection(document.querySelector('[data-section="1"]'));
 bindObjectInteractions();
+renderTicketPatterns();

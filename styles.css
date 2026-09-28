@@ -1741,3 +1741,43 @@ h2 {
     animation: none;
   }
 }
+
+.ticket__qr {
+  position: relative;
+  align-self: center;
+  display: grid;
+  width: 72px;
+  flex: 0 0 auto;
+  aspect-ratio: 1;
+  grid-template-columns: repeat(21, minmax(0, 1fr));
+  gap: 0;
+  margin-block: auto;
+  padding: 4px;
+  border: 1px solid rgba(248, 242, 226, 0.82);
+  border-radius: 3px;
+  background: #eee9df;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.24), inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.ticket__qr-module {
+  background: transparent;
+}
+
+.ticket__qr-module.is-on {
+  background: #142e59;
+}
+
+.ticket__footer {
+  margin-top: 0;
+}
+
+@media (max-width: 760px) {
+  .ticket__qr {
+    width: 52px;
+    padding: 3px;
+  }
+
+  .ticket {
+    aspect-ratio: 0.58;
+  }
+}
