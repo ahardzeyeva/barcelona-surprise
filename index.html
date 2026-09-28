@@ -1,1 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A December Surprise</title>
+    <link rel="preload" href="assets/Geist-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/Geist-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/Geist-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="experience" aria-live="polite">
+      <section class="section section--gift is-visible" id="mystery" data-section="1">
+        <img class="section__image" src="assets/01-gift.webp" alt="A black gift wrapped with a burgundy ribbon">
+        <div class="section__shade"></div>
+        <div class="gift-opening-glow" aria-hidden="true"></div>
+        <p class="progress">01 / 04</p>
+        <button class="gift-hotspot" type="button" data-unlock="2" aria-label="Open the gift"></button>
+        <span class="sparkle sparkle--one" aria-hidden="true"></span>
+        <span class="sparkle sparkle--two" aria-hidden="true"></span>
+        <span class="sparkle sparkle--three" aria-hidden="true"></span>
+        <div class="section__content section__content--left">
+          <h1>I’ve got something for you</h1>
+          <p class="subtitle">Hope you like it.</p>
+          <p class="micro-copy">Tap the gift <span aria-hidden="true">→</span></p>
+          <button class="button" type="button" data-unlock="2">
+            <span>Open gift</span>
+            <span class="button__arrow" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+          </button>
+        </div>
+      </section>
 
+      <section class="section section--flight" id="flight" data-section="2" hidden>
+        <img class="section__image" src="assets/02-flight.webp" alt="Barcelona at dusk, seen through an airplane window">
+        <div class="section__shade"></div>
+        <p class="progress">02 / 04</p>
+        <button class="flight-hotspot" type="button" data-unlock="3" aria-label="Keep going"></button>
+        <div class="section__content section__content--left flight-copy">
+          <h2>Okay. First — Warsaw → Barcelona</h2>
+          <p class="subtitle">18 December</p>
+          <div class="flight-details">
+            <span class="flight-route"><i data-lucide="plane" aria-hidden="true"></i>WAW → BCN</span>
+            <span class="flight-date"><i data-lucide="calendar-days" aria-hidden="true"></i>18 DEC</span>
+          </div>
+          <button class="button" type="button" data-unlock="3">
+            <span>Keep going</span>
+            <span class="button__arrow" aria-hidden="true"><i data-lucide="arrow-right"></i></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section section--barcelona" id="barcelona" data-section="3" hidden>
+        <img class="section__image" src="assets/03-barcelona.webp" alt="Christmas lights and evening market stalls in Barcelona">
+        <div class="section__shade"></div>
+        <p class="progress">03 / 04</p>
+        <div class="section__content section__content--left">
+          <span class="barcelona-eyebrow">BCN · DECEMBER</span>
+          <h2>Barcelona before Christmas is a whole vibe</h2>
+          <p class="subtitle">Lights, markets, evening walks, and a city we already love.</p>
+          <span class="editorial-tag"><i data-lucide="sparkles" aria-hidden="true"></i>DEC · BCN</span>
+          <button class="button button--final-reveal" type="button" data-unlock="4" aria-label="Press and hold for two seconds to reveal the final surprise">
+            <span class="hold-progress" aria-hidden="true"></span>
+            <span class="button__label">Press and hold</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section section--final" id="camp-nou" data-section="4" hidden>
+        <img class="section__image" src="assets/04-campnou.webp" alt="Camp Nou illuminated for an evening match">
+        <div class="section__shade section__shade--final"></div>
+        <p class="progress">04 / 04</p>
+        <div class="final-layout">
+          <div class="section__content final-copy">
+            <span class="final-kicker"><i data-lucide="sparkles" aria-hidden="true"></i>MATCH NIGHT</span>
+            <h2>And yes — this time it’s Camp Nou.</h2>
+            <p class="subtitle">You’ve already been to Montjuïc. Now it’s time for the place every Barça fan wants to visit at least once.</p>
+            <p class="final-fixture"><i data-lucide="ticket" aria-hidden="true"></i>FC Barcelona vs Real Sociedad · 19 December</p>
+          </div>
+
+          <span class="final-sparkle final-sparkle--one" aria-hidden="true"></span>
+          <span class="final-sparkle final-sparkle--two" aria-hidden="true"></span>
+          <span class="final-sparkle final-sparkle--three" aria-hidden="true"></span>
+          <div class="ticket-pair" aria-label="Two gift tickets for the match">
+            <article class="ticket ticket--one">
+              <header class="ticket__header">
+                <img class="ticket__club-logo" src="assets/fcb-logo.png" alt="">
+                <div class="ticket__brand">
+                  <span>GIFT MATCH PASS</span>
+                  <small>BARCELONA · DECEMBER</small>
+                </div>
+                <img class="ticket__league-logo" src="assets/laliga-logo.png" alt="LaLiga">
+              </header>
+              <div class="ticket__match">
+                <div class="ticket__clubs">
+                  <div class="ticket__club">
+                    <img src="assets/fcb-logo.png" alt="">
+                    <span>FC BARCELONA</span>
+                  </div>
+                  <span class="ticket__vs">vs</span>
+                  <div class="ticket__club">
+                    <img src="assets/real-sociedad-logo.png" alt="">
+                    <span>REAL SOCIEDAD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ticket__event">
+                <strong>19 DECEMBER</strong>
+                <span>CAMP NOU · BARCELONA</span>
+              </div>
+              <div class="ticket__seats" aria-label="Access 07, Gate 104, Zone L2S, Row 22, Seat 18">
+                <div><small>ACCESS</small><strong>07</strong></div>
+                <div><small>GATE</small><strong>104</strong></div>
+                <div><small>ZONE</small><strong>L2S</strong></div>
+                <div><small>ROW</small><strong>22</strong></div>
+                <div><small>SEAT</small><strong>18</strong></div>
+              </div>
+              <footer class="ticket__footer">
+                <span class="ticket__holder">FOR IHAR</span>
+                <span class="ticket__serial" aria-hidden="true">BCN-1912-GIFT-01</span>
+                <span class="ticket__number">01 / 02</span>
+              </footer>
+            </article>
+
+            <article class="ticket ticket--two">
+              <header class="ticket__header">
+                <img class="ticket__club-logo" src="assets/fcb-logo.png" alt="">
+                <div class="ticket__brand">
+                  <span>GIFT MATCH PASS</span>
+                  <small>BARCELONA · DECEMBER</small>
+                </div>
+                <img class="ticket__league-logo" src="assets/laliga-logo.png" alt="LaLiga">
+              </header>
+              <div class="ticket__match">
+                <div class="ticket__clubs">
+                  <div class="ticket__club">
+                    <img src="assets/fcb-logo.png" alt="">
+                    <span>FC BARCELONA</span>
+                  </div>
+                  <span class="ticket__vs">vs</span>
+                  <div class="ticket__club">
+                    <img src="assets/real-sociedad-logo.png" alt="">
+                    <span>REAL SOCIEDAD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ticket__event">
+                <strong>19 DECEMBER</strong>
+                <span>CAMP NOU · BARCELONA</span>
+              </div>
+              <div class="ticket__seats" aria-label="Access 07, Gate 104, Zone L2S, Row 22, Seat 19">
+                <div><small>ACCESS</small><strong>07</strong></div>
+                <div><small>GATE</small><strong>104</strong></div>
+                <div><small>ZONE</small><strong>L2S</strong></div>
+                <div><small>ROW</small><strong>22</strong></div>
+                <div><small>SEAT</small><strong>19</strong></div>
+              </div>
+              <footer class="ticket__footer">
+                <span class="ticket__holder">+1</span>
+                <span class="ticket__serial" aria-hidden="true">BCN-1912-GIFT-02</span>
+                <span class="ticket__number">02 / 02</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
